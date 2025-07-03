@@ -1,0 +1,51 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "mtm-app",
+          "appId": "1:YOUR_PROJECT_NUMBER:android:YOUR_APP_ID",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "mtm-app",
+          "appId": "1:YOUR_PROJECT_NUMBER:ios:YOUR_APP_ID",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "mtm-app",
+          "configurations": {
+            "android": "1:YOUR_PROJECT_NUMBER:android:YOUR_APP_ID",
+            "ios": "1:YOUR_PROJECT_NUMBER:ios:YOUR_APP_ID",
+            "web": "1:YOUR_PROJECT_NUMBER:web:YOUR_WEB_APP_ID"
+          }
+        }
+      }
+    }
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "mtm-scripts",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Utility scripts for MTM setup and management",
+  "scripts": {
+    "setup-wallet": "node setup-reward-wallet.js",
+    "setup-wallet-force": "node setup-reward-wallet.js --force",
+    "test-solana": "node test-solana-integration.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.4",
+    "@solana/spl-token": "^0.4.8",
+    "bs58": "^5.0.0"
+  }
+}

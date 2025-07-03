@@ -1,0 +1,31 @@
+{
+  "name": "mtm-functions",
+  "description": "Cloud Functions for MTM (Music That Matters)",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . || true",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.7.0",
+    "firebase-functions": "^6.3.2",
+    "@solana/web3.js": "^1.95.4",
+    "@solana/spl-token": "^0.4.8",
+    "axios": "^1.7.7",
+    "bs58": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}

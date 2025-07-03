@@ -1,7 +1,7 @@
 name: mtm
-description: "A new Flutter project."
+description: "MTM (Music That Matters) - A Flutter app that rewards real music listeners with SPL tokens on Solana."
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.0+1
 
 environment:
   sdk: ^3.7.0
@@ -10,10 +10,73 @@ dependencies:
   flutter:
     sdk: flutter
 
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^9.0.0
+  go_router: ^14.8.1
+  flutter_hooks: ^0.21.2
+  url_launcher: ^6.3.1
+  google_fonts: ^6.2.1
+  app_links: ^6.4.0
+  firebase_core: ^3.13.0
+  cloud_firestore: ^5.6.6
+  firebase_storage: ^12.4.5
+  firebase_auth: ^5.4.5
+  firebase_messaging: ^15.2.5
+  flutter_dotenv: ^5.1.0
+  privy_flutter: ^0.0.8
+  solana_web3:
+    git:
+      url: https://github.com/silnt-awaken/solana-web3.git
+      ref: master
+  dio: ^5.8.0+1
+  cryptofont: ^1.0.2+1
+  flutter_launcher_icons: ^0.14.3
+  pretty_string: ^1.0.1
+  date_format: ^2.0.9
+  file_picker: ^9.2.1
+  path_provider: ^2.1.5
+  equatable: ^2.0.7
+  solana: ^0.31.0+1
+  pointycastle: ^3.9.1
+  asn1lib: ^1.6.2
+  font_awesome_flutter: ^10.8.0
+  package_info_plus: ^8.3.0
+  shared_preferences: ^2.5.3
+  cached_network_image: ^3.4.1
+  shimmer: ^3.0.0
+  device_info_plus: ^11.4.0
+  android_id: ^0.4.0
+  intl: ^0.20.2
+  rxdart: ^0.28.0
+  uuid: ^4.5.1
+  cryptography: ^2.7.0
+  flutter_secure_storage: ^9.2.4
+  restart_app: ^1.3.2
+  audio_service: ^0.18.15
+  just_audio: ^0.9.42
+  audio_session: ^0.1.21
+  permission_handler: ^11.3.1
+  wakelock_plus: ^1.2.8
+  flutter_local_notifications: ^18.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  package_rename: ^1.7.1
   flutter_lints: ^5.0.0
+  
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path_ios: "assets/icons/logo.png"
+  remove_alpha_ios: true
+  background_color_ios: "0xFFFFFF"
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/audio/
+    - assets/graphics/
+    - .env
